@@ -1,5 +1,5 @@
-DATA work.ABT_MODELAGEM;
-	SET work.JOIN_CREDIT_APP(drop= CODE_GENDER);
+DATA WORK.ABT_MODELAGEM;
+	SET DADOS.JOIN_CREDIT_APP(drop= CODE_GENDER);
 	
 	IF status in ("1" "2" "3" "4" "5") then target = 1;
 	ELSE IF status in ("0" "X" "C") then target = 0;
